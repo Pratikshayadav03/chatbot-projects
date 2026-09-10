@@ -1,79 +1,68 @@
-#  Agentic AI Multi-Agent System
+#  AI Chatbot using Ollama and LangChain
 
 ##  Project Overview
 
-This project demonstrates an **Agentic AI system** that uses multiple specialized agents to understand user queries and perform different tasks.
+This project is a simple AI-powered chatbot built using **Python, LangChain, Ollama, and Llama 3.1**.
 
-Unlike a traditional AI chatbot that mainly generates responses, an Agentic AI system can use **tools and specialized agents** to accomplish tasks.
-
-One of the agents in this project uses **DuckDuckGo for web searching**, allowing the system to retrieve information from the internet when required.
+The chatbot allows users to interact with a locally running Large Language Model (LLM) and receive AI-generated responses. The project focuses on understanding the basics of conversational AI and how an LLM can be integrated into a Python application.
 
 ---
 
 ##  Objective
 
-The main objective of this project is to understand the fundamentals of **Agentic AI and multi-agent systems**.
+The main objective of this project is to learn how to:
 
-This project demonstrates how:
-
-- AI agents can work with external tools
-- Different agents can perform specialized tasks
-- Web search can be integrated into an AI system
-- An LLM can be used as the reasoning component
-- Agents can be combined to create a more capable AI application
+- Work with Large Language Models (LLMs)
+- Run an AI model locally using Ollama
+- Use LangChain to communicate with the model
+- Create a basic conversational AI application
+- Send messages to an LLM and process its responses
 
 ---
 
 ##  Features
 
--  Agentic AI system
--  Multiple specialized agents
--  DuckDuckGo web search
--  Real-time web information retrieval
--  LLM-powered responses
--  Tool-based task execution
--  Python implementation
--  LangChain integration
--  Local LLM support using Ollama
+-  AI-powered conversation
+-  User-to-AI interaction
+-  Powered by Llama 3.1
+-  Runs locally using Ollama
+-  Uses LangChain for model interaction
+-  Developed using Python
+-  Local model execution without requiring an external AI API
 
 ---
 
-##  Agents Used
+##  Technologies Used
 
-###  1. DuckDuckGo Search Agent
-
-The DuckDuckGo agent is responsible for performing web searches.
-
-When the user asks for information that requires web access, the agent can use DuckDuckGo to search for relevant information.
-
-This makes the AI system more useful for queries requiring current or external information.
-
-###  2. Specialized Agent
-
-The second agent performs another specialized task within the system.
-
-The Agentic AI system can use the appropriate agent depending on the user's query.
-
-> Update this section with the exact name and purpose of your second agent if you want the README to describe it specifically.
+| Technology | Purpose |
+|------------|---------|
+| Python | Programming language |
+| Ollama | Runs the LLM locally |
+| Llama 3.1 | Language model |
+| LangChain | Framework for working with LLMs |
+| LangChain Core | Message and model handling |
+| VS Code | Development environment |
 
 ---
 
-##  System Workflow
+##  How the Chatbot Works
+
+The basic workflow of the application is:
 
 ```text
-                    User Query
-                         │
-                         ▼
-                  Agentic AI System
-                         │
-                ┌────────┴────────┐
-                │                 │
-                ▼                 ▼
-       DuckDuckGo Agent     Specialized Agent
-                │                 │
-                ▼                 ▼
-          Web Search         Task Processing
-                │                 │
-                └────────┬────────┘
-                         ▼
-                  Final AI Response
+             User
+               │
+               ▼
+        Enter a Message
+               │
+               ▼
+          LangChain
+               │
+               ▼
+        Ollama / Llama 3.1
+               │
+               ▼
+       Generate AI Response
+               │
+               ▼
+          Display Response
